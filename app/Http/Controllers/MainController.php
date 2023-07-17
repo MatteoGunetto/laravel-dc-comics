@@ -41,6 +41,8 @@ class MainController extends Controller
         $newComic->price = $data['price'];
         $newComic->series = $data['series'];
 
+
+
         $newComic->save();
 
         return redirect()->route('comics.index');

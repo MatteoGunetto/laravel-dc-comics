@@ -26,6 +26,7 @@
                             <textarea type="text" name="description" class="form-control" id="description" placeholder="Inserisci descrizione comic"></textarea>
                         </div>
 
+
                         <button type="submit" class="btn btn-primary">Inserisci Comic</button>
                     </form>
                 </div>
