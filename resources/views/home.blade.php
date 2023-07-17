@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang=en>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Styles -->
-    @vite('resources/js/app.js')
-</head>
+@extends('layout.body')
 
-<body>
-
-    <h1>{{ $comics[1]->title }}</h1>
-
-</body>
-
-</html>
+@section('content')
+    <main class="text-center">
+        <h2>Mostra tutti i Comics</h2>
+        <a class="btn btn-primary" href="{{ route('comics.index') }}">Clicca per i Comics</a>
+    </main>
+@endsection

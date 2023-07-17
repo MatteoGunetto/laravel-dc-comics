@@ -1,5 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
+// importo Controller
+use App\Http\Controllers\MainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,7 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return view('home');
+});
 
-use App\Http\Controllers\MainController as MainController;
+// creo nuova Route:resourse così da avere a disposizione
+// tutte le rotte per le funzioni del controller
 
-Route::get('/', [MainController::class, 'index']);
+Route::resource('comics', MainController::class);

@@ -1,1 +1,12 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+
+p{
+    font-weight: bold;
+}
+
+
+img{
+    // height: 200px;
+    max-width: 250px;
+}
