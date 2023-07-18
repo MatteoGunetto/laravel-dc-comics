@@ -34,16 +34,16 @@ class MainController extends Controller
      */
     public function store(Request $request)
     {
-        $data=$request->all();
-        $newComic = new Comic;
-        $newComic->title = $data['title'];
-        $newComic->description = $data['description'];
-        $newComic->price = $data['price'];
-        $newComic->series = $data['series'];
+        $comics=$request->all();
+        Comic::create([
 
+            "title" => $comics['title'],
+            "description" => $comics['description'],
+            "thumb" => $comics['thumb'],
+            "price" => $comics['price'],
+            "series" => $comics['series'],
+        ]);
 
-
-        $newComic->save();
 
         return redirect()->route('comics.index');
     }
@@ -59,4 +59,38 @@ class MainController extends Controller
 
         return view('comics.show', compact('comic'));
     }
+
+    public function edit($id)
+    {
+        $comic = Comic::findOrFail($id);
+
+        return view('comics.edit', compact('comic'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $data = $request->all();
+
+        $comic = Comic::findOrFail($id);
+
+        $comic->title = $data['title'];
+        $comic->description = $data['description'];
+        $comic->price = $data['price'];
+        $comic->series = $data['series'];
+
+        $comic->save();
+
+        return redirect()->route('comics.index');
+    }
+
+
+
+
 }

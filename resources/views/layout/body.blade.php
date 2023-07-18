@@ -9,10 +9,12 @@
         @vite('resources/js/app.js')
     </head>
     <body>
-        <header>
-            <h1>
-                Laravel DC Comics
-            </h1>
+        <header class="mb-4 text-center">
+            <div class="container">
+                <h1>
+                    Laravel DC Comics
+                </h1>
+            </div>
         </header>
         <main>
             @yield('content')

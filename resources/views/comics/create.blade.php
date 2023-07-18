@@ -25,6 +25,10 @@
                             <label for="description" class="form-label">Descrizione:</label>
                             <textarea type="text" name="description" class="form-control" id="description" placeholder="Inserisci descrizione comic"></textarea>
                         </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Thumb:</label>
+                            <textarea type="text" name="thumb" class="form-control" id="description" placeholder="Inserisci la thumb"></textarea>
+                        </div>
 
 
                         <button type="submit" class="btn btn-primary">Inserisci Comic</button>
