@@ -113,7 +113,7 @@ class ComicTableSeeder extends Seeder
             [
                 "title" => "Batman Beyond #1",
                 "description" => "“THE RETURN” part one! Terry McGinnis is back as Batman, much to the delight of his family and friends. But is the original Joker really back as well? Inspired by the possible return of their role model, the Jokerz have taken over an entire section of Gotham City and are determined to wreak havoc in the still-rebuilding city. While Batman battles chaos on the streets, his friend Dana is at the mercy of the new leader of the now-unified gang.",
-                "thumb" => "https://imgs.search.brave.com/jgxYlrx442aozemzjqdmCsd9DkIkRollJp1T8sG8TfE/rs:fit:720:1106:1/g:ce/aHR0cHM6Ly9veXN0/ZXIuaWduaW1ncy5j/b20vd29yZHByZXNz/L3N0Zy5pZ24uY29t/LzIwMTgvMTAvU1RM/MDk3MDk1LTcyMHgx/MTA2LmpwZw",
+                "thumb" => "https://m.media-amazon.com/images/I/91GCFZgiFpL._AC_UF1000,1000_QL80_.jpg",
                 "price" => "$2.99",
                 "series" => "Batman Beyond",
                 "sale_date" => "2016-10-26",
@@ -196,7 +196,7 @@ class ComicTableSeeder extends Seeder
             [
                 "title" => "Batman: White Knight Presents: Harley Quinn #1",
                 "description" => "The Joker is dead, Bruce Wayne is behind bars...and Gotham City is just starting to redefine itself without Batman. As Harley Quinn struggles to adjust to her new life as the mother of Jack Napier’s twins, an elusive mastermind called the Producer seizes the moment to assemble a crew of villains-starting with the Starlet, a serial killer who murders Gotham’s golden age film stars in homage to their silver screen roles. When a recent, gruesome crime scene suggests a connection to The Joker, the GTO, and FBI agent Hector Quimby turn to Harley as the one person with information that could crack the case. With some help from Bruce, Harley agrees to investigate-but to protect her children and her city from a fatal final act, Harley must flirt with madness and confront her own past.",
-                "thumb" => "https://imgs.search.brave.com/qMxyCwK99aguaETp4ioxXLrpxwNg2JNBN3Oq7LGAgzM/rs:fit:780:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZmxpY2tlcmluZ215/dGguY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzEwL0Jh/dG1hbi1XaGl0ZS1L/bmlnaHQtUHJlc2Vu/dHMtSGFybGV5LVF1/aW5uLTEtMS5qcGc",
+                "thumb" => "https://m.media-amazon.com/images/I/91uTUXN0sNS._AC_UF1000,1000_QL80_.jpg",
                 "price" => "$4.99",
                 "series" => "Batman: White Knight Presents: Harley Quinn",
                 "sale_date" => "2020-10-20",
