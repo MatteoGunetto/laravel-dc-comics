@@ -2,6 +2,7 @@
 
 @section('content')
         <div class="container m-auto">
+            <button type="home" class="btn btn-primary"><a href="/" class="text-light text-decoration-none">HOME</a></button>
             <div class="row g-3">
                 @foreach ($comics as $element)
                 <div class="col">
