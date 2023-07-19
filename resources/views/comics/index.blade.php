@@ -11,7 +11,7 @@
                         <img class="m-auto" src={{ $element->thumb }} class="card-img-top" alt="{{ $element->title }}">
                         <div class="card-body pt-1">
                             <h6>{{ $element->series }}</h6>
-                            <p class="card-text">{{ $element->price }}</p>
+                            <p class="card-text">{{ $element->price }}$</p>
                             <a style="font-size: 0.75rem" href="{{ route('comics.show', $element->id) }}" class="btn btn-primary">Vedi dettagli</a>
                             <a style="font-size: 0.75rem" href="{{ route('comics.edit', $element->id) }}" class="btn btn-secondary">Modifica </a>
                             <form class="d-inline" action="{{ route('comics.destroy', $element->id) }}" method="POST">

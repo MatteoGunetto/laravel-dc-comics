@@ -34,19 +34,26 @@ class MainController extends Controller
      */
     public function store(Request $request)
     {
-        $comics=$request->all();
-        Comic::create([
+        $request->validate([
+                'title' => 'required|min:1|max:255',
+                'series' => 'required|min:1|max:255',
+                'price'=> 'required|numeric|min:1',
 
-            "title" => $comics['title'],
-            "description" => $comics['description'],
-            "thumb" => $comics['thumb'],
-            "price" => $comics['price'],
-            "series" => $comics['series'],
-        ]);
+            ]);
 
+            $comics=$request->all();
+            Comic::create([
+
+                "title" => $comics['title'],
+                "description" => $comics['description'],
+                "thumb" => $comics['thumb'],
+                "price" => $comics['price'],
+                "series" => $comics['series'],
+            ]);
 
         return redirect()->route('comics.index');
     }
+
     /**
      * Display the specified resource.
      *

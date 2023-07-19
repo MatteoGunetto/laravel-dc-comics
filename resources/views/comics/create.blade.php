@@ -19,8 +19,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="price" class="form-label">Prezzo:</label>
-                            {{-- da trasformare in numero --}}
-                            <input required type="text" name="price" class="form-control" id="price" placeholder="Inserisci la serie">
+                            <input required type="number" min="1" name="price" class="form-control" id="price" placeholder="Inserisci il prezzo">
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label">Descrizione:</label>
@@ -28,7 +27,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label">Thumb:</label>
-                            <textarea type="text" name="thumb" class="form-control" id="description" placeholder="Inserisci la thumb"></textarea>
+                            <textarea type="text" name="thumb" class="form-control" id="thumb" placeholder="Inserisci la thumb"></textarea>
                         </div>
 
 

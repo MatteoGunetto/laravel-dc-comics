@@ -19,8 +19,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="price" class="form-label">Prezzo:</label>
-                            {{-- da trasformare in numero --}}
-                            <input required type="text" name="price" class="form-control" id="price" value="{{ $comic->price }}">
+                            <input required type="number" min="1"  name="price" class="form-control" id="price" value="{{ $comic->price }}">
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label">Descrizione:</label>
