@@ -10,6 +10,29 @@ class MainController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+
+    // --------------------------------------------------
+    // ----------funzione esterna per validazione--------
+    //  private function dataValidation(Request $request){
+    //     $request->validate([
+    //         'title' => 'required|min:1|max:255',
+    //         'series' => 'required|min:1|max:255',
+    //         'price' => 'required|numeric'
+    //     ]);
+    // }
+    // richiamare funzione in store/update
+        // $this->dataValidation($request);
+
+        // $data=$request->all();
+    // ---------------------------------------------
+
+
+
+
+
+
     public function index()
     {
         $comics = Comic::all();
@@ -37,7 +60,8 @@ class MainController extends Controller
         $request->validate([
                 'title' => 'required|min:1|max:255',
                 'series' => 'required|min:1|max:255',
-                'price'=> 'required|numeric|min:1',
+                'description' => 'required|min:1|',
+                'price'=> 'required|numeric|',
 
             ]);
 
@@ -83,6 +107,14 @@ class MainController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'title' => 'required|min:1|max:255',
+            'series' => 'required|min:1|max:255',
+            'description' => 'required|min:1|',
+            'price'=> 'required|numeric|',
+
+        ]);
+
         $data = $request->all();
 
         $comic = Comic::findOrFail($id);

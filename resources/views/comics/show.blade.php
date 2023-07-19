@@ -3,7 +3,8 @@
 @section('content')
     <main>
         <div class="container">
-            <button type="home" class="btn btn-primary"><a href="/" class="text-light text-decoration-none">HOME</a></button>
+            <button type="home" class="btn btn-primary"><a href="/" class=" fw-bold text-light text-decoration-none">HOME</a></button>
+            <button type="home" class="btn btn-primary"><a href="/comics" class=" fw-bold text-light text-decoration-none">Comic List</a></button>
             <div class="row">
                 <div>
                     <div>
